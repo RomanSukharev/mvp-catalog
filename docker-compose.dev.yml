@@ -1,0 +1,15 @@
+# For more information: https://laravel.com/docs/sail
+version: '3'
+services:
+  flat-catalog-dev:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.dev
+      args:
+        NODE_VERSION: '${NODE_VERSION}'
+    ports:
+      - '${APP_PORT:-3000}:3000'
+      - '${DEV_PORT:-24678}:24678'
+    volumes:
+      - '.:/src'
+      - './node_modules:/src/node_modules'

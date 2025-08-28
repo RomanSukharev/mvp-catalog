@@ -1,0 +1,61 @@
+// ------------------------------ INIT FONTS (start) ------------------------------
+@font-face {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/LabGrotesque-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/LabGrotesque-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Asgard";
+  src: url("../fonts/Asgard-Fit-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/TT_Norms_Pro.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url("../fonts/TTNormsPro-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/TT_Norms_Pro-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUILight.woff") format("woff");
+}
+// ------------------------------ INIT FONTS (end) ------------------------------
+
+// --------------------------- GLOBAL CLASSES (start) ---------------------------
+:root {
+  color-scheme: only light;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+body {
+  // background-color: $c_body;
+  margin: 0 auto;
+}
